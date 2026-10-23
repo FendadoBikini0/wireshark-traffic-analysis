@@ -68,6 +68,20 @@ The capture contained warnings such as suspected retransmissions and suspected o
 
 These events do not, by themselves, establish malicious activity or a network fault.
 
+## Filters Used
+
+| Display filter | Purpose |
+|---|---|
+| `dns` | Inspect DNS queries and responses |
+| `tls.handshake.type == 1` | Identify TLS Client Hello messages |
+| `tcp.analysis.flags` | Investigate TCP analysis events |
+| `ip.addr == 104.18.32.47` | Isolate traffic involving the observed IP address |
+| `ip.addr == 104.18.32.47 && tcp.analysis.flags` | Examine TCP analysis events involving that IP |
+
+## Evidence
+
+Screenshots documenting the investigation can be added here. Sensitive information should be redacted before publication.
+
 ## Key Learnings
 
 - DNS resolves domain names into IP addresses and can return other types of records.
