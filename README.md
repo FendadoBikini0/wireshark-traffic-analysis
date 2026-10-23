@@ -80,7 +80,7 @@ These events do not, by themselves, establish malicious activity or a network fa
 
 ## Evidence
 
-Screenshots documenting the investigation can be added here. Sensitive information should be redacted before publication.
+---
 
 ## Key Learnings
 
